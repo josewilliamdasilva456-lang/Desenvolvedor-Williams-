@@ -1,0 +1,19 @@
+// Mensagem de boas-vindas
+
+console.log("William Tecnologia carregado!");
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    const botoes = document.querySelectorAll(".download a");
+
+    botoes.forEach(function(botao) {
+
+        botao.addEventListener("click", function() {
+
+            console.log("Download solicitado: " + botao.textContent);
+
+        });
+
+    });
+
+});
